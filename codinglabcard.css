@@ -1,0 +1,95 @@
+body {
+  background-color: rgb(243, 246, 249);
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.playcard .circular-image {
+  width: 150px;
+  /* Adjust the width and height as needed */
+  height: 150px;
+  border-radius: 50%;
+  padding: 3px;
+  position: relative;
+  background-color: rgb(35, 108, 218);
+  align-items: center;
+}
+
+.circular-image img {
+  width: 100%;
+  /* Make the image fill the container */
+  height: 100%;
+  /* Maintain the aspect ratio of the image */
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+}
+
+.playcard {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  max-width: 370px;
+  width: 100%;
+  border-radius: 24px;
+  background-color: rgb(232, 226, 226);
+  position: relative;
+}
+
+.playcard::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 36%;
+  width: 100%;
+  background-color: rgb(35, 108, 218);
+  border-radius: 24px 24px 0 0;
+}
+
+
+.playcard .text {
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text .name{
+  font-style: bold;
+  font-weight: bold;
+}
+.text .job{
+  font-size: medium;
+}
+
+.media-buttons{
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.media-buttons .link{
+  border-spacing: 5px;
+  border-radius: 50%;
+  padding: 5px;
+  object-fit: cover;
+  display: inline;
+  margin: 5px;
+  color: white;
+}
+
+.playcard .buttons{
+  border-radius: 25px;
+  margin: 10px;  
+  background-color:rgb(108, 16, 27);
+}
+
+.btn-msg{
+  color: white;
+}
